@@ -1,7 +1,7 @@
 
-continuar = "y"
+continuar = "Y"
 resultado= 0
-while continuar=="y"  or continuar=="y":
+while continuar.upper()=="Y":
 
     n1 = int(input("Ingrese el primer dígito: "))
     n2 = int(input("Ingrese el segundo dígito: "))
@@ -21,6 +21,6 @@ while continuar=="y"  or continuar=="y":
     elif(op==4):
         print(f"{n1}/{n2}={n1/n2}")
     else:
-        print("La operación seleccionada no es válida")
+        print("La operación seleccionada"+op+"no es válida")
 
-    continuar = input("Desea realizar otra operación? (Y/N)")
+    continuar = input("Desea realizar otra operación? (Y/N): ")
